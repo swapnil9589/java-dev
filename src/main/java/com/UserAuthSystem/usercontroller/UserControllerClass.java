@@ -17,12 +17,6 @@ public class UserControllerClass {
     @Autowired
     private UserRepo userRepo;
 
-
-    @GetMapping
-    public List<User> getallUser() {
-        return userRepo.findAll();
-    }
-
     @PostMapping
     public ResponseEntity<String> saveUser(@RequestBody User user) {
 
